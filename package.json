@@ -1,0 +1,24 @@
+{
+  "name": "data-structures-and-algorithm",
+  "version": "1.0.0",
+  "description": "- Motivate the need for sth like Big O Notation - Describe what Big O Notation is  - Simplify Big O Expressions - Define \"time complexity\" and \"space complexity\" - Evaluate the time complexity and space complexity of different algorithms using Big O Notation - Describe what a logarithm is",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start" : "nodemon Problem_Solving_Patterns/SlidingWindow.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mthang1801/data-structures-and-algorithm.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mthang1801/data-structures-and-algorithm/issues"
+  },
+  "homepage": "https://github.com/mthang1801/data-structures-and-algorithm#readme",
+  "dependencies": {
+    "nodemon": "^2.0.4"
+  }
+}

@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start" : "nodemon Problem_Solving_Patterns/SlidingWindow.js"
+    "start" : "nodemon Problem_Solving_Patterns/findLongestSubstring.js"
   },
   "repository": {
     "type": "git",

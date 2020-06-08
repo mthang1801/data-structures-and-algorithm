@@ -29,7 +29,7 @@
 - How recursive functions work?\
 Invoke the **same** function with a different input ultil reaching to base case.
 
-### Searching Algorithms
+## Chapter3 : Searching Algorithms
 - How do we search? Given an array, the simplest way to search for an value is to look at every element in the array and check if it's the value we want. (called linear search)
 - **JS has search!**
   - There are many different search methods on arrays in javascript: 

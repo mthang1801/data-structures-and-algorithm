@@ -29,7 +29,7 @@
 - How recursive functions work?\
 Invoke the **same** function with a different input ultil reaching to base case.
 
-## Chapter3 : Searching Algorithms
+## Chapter 3 : Searching Algorithms
 - How do we search? Given an array, the simplest way to search for an value is to look at every element in the array and check if it's the value we want. (called linear search)
 - **JS has search!**
   - There are many different search methods on arrays in javascript: 
@@ -37,4 +37,30 @@ Invoke the **same** function with a different input ultil reaching to base case.
     * includes
     * find
     * findIndex
-    
+
+## Chapter 4 : Sorting Fundamental
+- Sorting is the process of rearanging the items in a collection(e.g array) so that the item are in some kind of order.
+  + Example : 
+    * Sorting numbers from smallest to largest
+    * Sorting names alphabetically
+    * Sorting movies based on release year
+    * Sorting movies based on revenue
+- Sorting is an incredibly common task, so it's good to know how it works.
+- There are many different ways to sort things, and different techniques have their own advantages and disadvantages.
+- Elementary Sort : 
+  1. Bubble sort.
+  2. Selection sort.
+  3. Insertion sort.
+- Compare Bubble, Selection, Insertion sort
+
+| Algorithms | Time Complexity(Best) | Time Complexity(Avg) | Time Complexity(Worst)| Space Complexity |
+|------------|-----------------------|----------------------|---------------------- | ---------------- |
+| Bubble Sort| O(n)                  | O(n<sup>2</sup>)     | O(n<sup>2</sup>)      |     O(1)         |
+| Insertion Sort| O(n)               | O(n<sup>2</sup>)     | O(n<sup>2</sup>)      |     O(1)         |
+| Selection Sort| O(n<sup>2</sup>)   | O(n<sup>2</sup>)     | O(n<sup>2</sup>)      |     O(1)         |
+
+* **Shortly**: 
+  + Sorting is fundamental!
+  + Bubble sort, selection sort, insertion sort, are all roughly equivalent
+  + All have average time complexities that are quadratic
+  + We can do better... but we need more complex algorithms!

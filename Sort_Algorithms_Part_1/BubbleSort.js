@@ -41,4 +41,12 @@ const bubbleSort = (arr) => {
   return arr;
 };
 
-console.log(bubbleSort([37, 45, 29, 8, 98, 54, 66, 1]));
+// console.log(bubbleSort([37, 45, 29, 8, 98, 54, 66, 1]));
+
+const arrRandom = Array.apply(null, { length: 100000 }).map(
+  Function.call,
+  Math.random
+);
+
+// console.log(arrRandom);
+console.log(bubbleSort(arrRandom));

@@ -1,5 +1,7 @@
-# JAVASCRIPT DATA STRUCTURES AND ALGORITHMS
-<h2> Chapter 1 : Big O Notation</h2>
+<h1>JAVASCRIPT DATA STRUCTURES AND ALGORITHMS</h1>
+<h2><strong>SECTION 1 : ALGORITHMS</strong> <h2>
+
+<h3> Chapter 1 : Big O Notation</h3>
 <ul>
   <li>Motivate the need for sth like Big O Notation</li>
   <li> Describe what Big O Notation is </li>
@@ -9,7 +11,7 @@
   <li> Describe what a logarithm is</li>
 </ul>
 
-<h2> Chapter 2 : Recursion </h2>
+<h3> Chapter 2 : Recursion </h3>
 <h4> Objectives </h4>
 - Define what recursion is and how it can be used.
 - Understand the two essential components of a recursive function.
@@ -17,6 +19,7 @@
 - Use helper method recursion and pure recursion to solve more difficult probles.
 
 <h4> Introduce </h4>
+
 - What is recursion? A **process**( a function in our case) that **call itself**
 - In almost all program languages, there is a built in data structure that manages what hanppens when functions are invoked (It's named **call stack**).
   * **About call stack** 
@@ -30,7 +33,7 @@
 - How recursive functions work?\
 Invoke the **same** function with a different input ultil reaching to base case.
 
-<h2> Chapter 3 : Searching Algorithms</h2>
+<h3> Chapter 3 : Searching Algorithms</h3>
 - How do we search? Given an array, the simplest way to search for an value is to look at every element in the array and check if it's the value we want. (called linear search)
 - **JS has search!**
   - There are many different search methods on arrays in javascript: 
@@ -39,7 +42,7 @@ Invoke the **same** function with a different input ultil reaching to base case.
     * find
     * findIndex
 
-## Chapter 4 : Sorting Algorithms Fundamental
+<h3> Chapter 4 : Sorting Algorithms Fundamental</h3>
 - Sorting is the process of rearanging the items in a collection(e.g array) so that the item are in some kind of order.
   + Example : 
     * Sorting numbers from smallest to largest
@@ -66,7 +69,7 @@ Invoke the **same** function with a different input ultil reaching to base case.
   + All have average time complexities that are quadratic
   + We can do better... but we need more complex algorithms!
 
-<h2> Chapter 5 : Intermidiate Sorting Algorithms</h2>
+<h3> Chapter 5 : Intermidiate Sorting Algorithms</h3>
 <h4> Why? </h4>
 
 - The sorting algorithms we've learned so far don't scale well.
@@ -98,7 +101,7 @@ Invoke the **same** function with a different input ultil reaching to base case.
   <li>More digits means the bigger number!</li>
 </ul>
 
-<h3> Big O of Merge Sort </h3>
+<h4> Big O of Merge Sort </h4>
 
   <table style="text-align:center">
     <thead>
@@ -134,5 +137,68 @@ Invoke the **same** function with a different input ultil reaching to base case.
       </tr>
     </tbody>
   </table>
+
+<h2><strong>SECTION 2 : DATA STRUCTURES</strong></h2>
+<div>
+  <p><strong>Define: </strong>Data stuctures are collections of values, the relationship among them, and the functions or operations that can be applied to the data</p>
+  <p>Different data structures excel at defferent things. Some are hightly specialized, while others (like arrays) are more generally used.</p>
+</div>
+<h3>Contents</h3>
+<h4> 1. Class Syntax  </h4>
+<h4> 2. Singly Linked Lists </h4>
+  
+<div>
+  <p><strong>Linked lists</strong> is a data structure that contains a <strong>head, tail</strong> and <strong>length</strong> property.</p>
+  <p>Linked lists consists of nodes, and each <strong>node</strong> has a <strong>value</strong> and a <strong>pointer</strong> to another node or null.</p>
+</div>
+
+<div>
+  <h4>Comparisons with Arrays</h4>
+  <table>
+    <thead>
+      <tr>
+        <th>Lists</th>
+        <th>Arrays</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>
+          <ul>
+            <li>Do not have indexes!</li>
+            <li>Connected via nodes with next pointer</li>
+            <li>Random access is not allowed.</li>
+          </ul> 
+        </td>             
+        <td>
+          <ul>
+            <li>Indexed in order!</li>
+            <li>Insertion and deletion can be expensive</li>
+            <li>Can quickly be accessed at a specific index.</li>
+          </ul>
+        </td>      
+      </tr>    
+    </tbody>
+  </table>  
+  
+</div>
+
+<h3><strong>Big O Notation</strong></h3>
+
+| type | time of complexity |
+| ---  | --- |
+| Insertion | O(1) | 
+| Removal |  It depends ... O(1) or O(n)|
+| Searching | O(n) |
+|Access |  O(n)|
+
+<h3><strong>RECAP: </strong></h3>
+<ul>
+  <li>Singly linked lists are excellent alternatives arrays when insertion and deletion at the beginning are frequently required</li>
+  <li>Array contains a build in index, whereas Linked lists do not index.</li>
+  <li>The idea of list data structure that consists of nodes is the foundation for other data structures like <code>Stacks and Queues</code></li>
+</ul>
+
+
 
 

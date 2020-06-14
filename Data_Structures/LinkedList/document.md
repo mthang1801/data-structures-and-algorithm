@@ -1,5 +1,8 @@
 <h1>METHOD AND SOLUTION FOR LINKED LIST</h1>
-<h2>Push(value)</h2>
+
+![Linked-list](https://miro.medium.com/max/953/1*elJncKhH_P9oQglfI1aVQA.png)
+
+<h2>push(val)</h2>
   <div>
     <h3>Define:</h3>
     <strong>Pushing</strong>: Adding a new node to the end of the linked list!
@@ -15,7 +18,7 @@
     <li>Increment the length by one</li>
   </ul>
     
-<h2>Pop()</h2>
+<h2>pop()</h2>
   <h3>Solution</h3>
   <ul>
     <li> If there are no nodes in the list, return undefined.</li>
@@ -25,7 +28,7 @@
     <li>Return the value of the node removed.</li>
   </ul>
 
-<h2>Shift()</h2>
+<h2>shift()</h2>
   <ul>
     <li>If there are no nodes, return undefined.</li>
     <li>Store the current head property in a varable (current value).</li>
@@ -34,7 +37,7 @@
     <li> Return the value of the node removed.</li>
   </ul>
 
-<h2>Unshift(value)</h2>
+<h2>unshift(val)</h2>
   <div><strong>Adding</strong> a new Node to beginning of the Linked list</div>
   <ul>
     <li>This function should accept a value </li>
@@ -46,7 +49,7 @@
     <li> Return the linked list</li>
   </ul>
 
-<h2>Get()</h2>
+<h2>get(index)</h2>
   <div>Retrieve a <strong>node</strong> by it's position in the Linked List.</div>
   <ul>
     <li>This function should accept an value</li>
@@ -54,7 +57,7 @@
     <li>Loop through the list until reaching the index and return node and specific index </li>
   </ul>
 
-<h2>Set(index, value)</h2>
+<h2>set(index, val)</h2>
   <ul>
     <li>This function should accept a value and an index</li>
     <li>Use your <strong>get</strong> method to find the specific value</li>
@@ -62,7 +65,7 @@
     <li>If the node is found, set the value of that node to be the value passed to the function and return value.</li>
   </ul>
 
-<h2>Insert(index, value)</h2>
+<h2>insert(index, val)</h2>
   <div>
     <strong>Adding </strong>a node to the Linked list at a specific position
   </div>
@@ -77,7 +80,7 @@
     <li>Return <code>true</code></li>
   </ul>
 
-<h2>Remove(index)</h2>
+<h2>remove(index)</h2>
 
   <div>
     <strong>Remove </strong>a node to the Linked list at a specific position
@@ -90,7 +93,7 @@
     <li>return <code>true</code></li>
   </ul>
 
-<h2>Reverse()</h2>
+<h2>reverse()</h2>
 
   <div>
     <strong>Reverse </strong>a node to the Linked list <strong>in place.</strong>

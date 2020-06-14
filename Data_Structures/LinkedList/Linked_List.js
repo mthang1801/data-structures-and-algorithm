@@ -102,7 +102,7 @@ class LinkedList {
     // return current;
   }
 
-  set(index, value) {
+  set(index, val) {
     let foundIndex = this.get(index);
     if (foundIndex) {
       foundIndex.val = val;
@@ -111,7 +111,7 @@ class LinkedList {
     return false;
   }
 
-  insert(index, value) {
+  insert(index, val) {
     if (index < 0 || index > this.length) {
       return false;
     }
@@ -119,9 +119,9 @@ class LinkedList {
       return this.unshift(val);
     }
     if (index === this.length) {
-      return this.push(value);
+      return this.push(val);
     }
-    let insertNode = new Node(value);
+    let insertNode = new Node(val);
     let prevNode = null;
     let currentNode = this.head;
     let counter = 0;
@@ -172,6 +172,14 @@ class LinkedList {
   }
 }
 
+/*
+//========================================================\\
+\\       ==========         TEST         ==========       //
+||                           **                           ||
+||                     **          **                     ||
+//                  ====================                  \\
+\\========================================================//
+*/
 let list = new LinkedList();
 console.log(list);
 list.push("a");

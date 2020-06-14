@@ -1,7 +1,10 @@
 <h1>JAVASCRIPT DATA STRUCTURES AND ALGORITHMS</h1>
+
+![Data-structures-and-algorithms](https://miro.medium.com/max/2560/0*VipVYAeCBQSqs3NC.jpg)
+
 <h2><strong>SECTION 1 : ALGORITHMS</strong> <h2>
 
-<h3> Chapter 1 : Big O Notation</h3>
+<h3 style="font-size:22px"> Chapter 1 : Big O Notation</h3>
 <ul>
   <li>Motivate the need for sth like Big O Notation</li>
   <li> Describe what Big O Notation is </li>
@@ -11,14 +14,14 @@
   <li> Describe what a logarithm is</li>
 </ul>
 
-<h3> Chapter 2 : Recursion </h3>
-<h4> Objectives </h4>
+<h3 style="font-size:22px"> Chapter 2 : Recursion </h3>
+<h4 style="font-size:18px"> Objectives </h4>
 - Define what recursion is and how it can be used.
 - Understand the two essential components of a recursive function.
 - Visualize the call stack to better debug and understand recursive functions.
 - Use helper method recursion and pure recursion to solve more difficult probles.
 
-<h4> Introduce </h4>
+<h4 style="font-size:18px"> Introduce </h4>
 
 - What is recursion? A **process**( a function in our case) that **call itself**
 - In almost all program languages, there is a built in data structure that manages what hanppens when functions are invoked (It's named **call stack**).
@@ -33,7 +36,7 @@
 - How recursive functions work?\
 Invoke the **same** function with a different input ultil reaching to base case.
 
-<h3> Chapter 3 : Searching Algorithms</h3>
+<h3 style="font-size:22px"> Chapter 3 : Searching Algorithms</h3>
 - How do we search? Given an array, the simplest way to search for an value is to look at every element in the array and check if it's the value we want. (called linear search)
 - **JS has search!**
   - There are many different search methods on arrays in javascript: 
@@ -42,7 +45,7 @@ Invoke the **same** function with a different input ultil reaching to base case.
     * find
     * findIndex
 
-<h3> Chapter 4 : Sorting Algorithms Fundamental</h3>
+<h3 style="font-size:22px"> Chapter 4 : Sorting Algorithms Fundamental</h3>
 - Sorting is the process of rearanging the items in a collection(e.g array) so that the item are in some kind of order.
   + Example : 
     * Sorting numbers from smallest to largest
@@ -69,19 +72,19 @@ Invoke the **same** function with a different input ultil reaching to base case.
   + All have average time complexities that are quadratic
   + We can do better... but we need more complex algorithms!
 
-<h3> Chapter 5 : Intermidiate Sorting Algorithms</h3>
-<h4> Why? </h4>
+<h3 style="font-size:22px"> Chapter 5 : Intermidiate Sorting Algorithms</h3>
+<h4 style="font-size:18px"> Why? </h4>
 
 - The sorting algorithms we've learned so far don't scale well.
 - There is family of sorting algorithms that can improve time of complexity from O(n<sup>2</sup>) to O(nlogn).
 - The more efficient algorithms are much less simple, and generally take a longer time to understand
-<h4> 1.Merging Arrays</h4>
+<h4 style="font-size:18px"> 1.Merging Arrays</h4>
 
   - In order to implement merge sort, it's useful to first implement a function responsible for merging sort.
   - Given two arrays which are sorted, this helper function should create a new array, which is also sorted, and consists of all of the elements in the two input arrays.
   - This function should run in **O(n + m)** time and **O(n + m)** space and **should not** modify the parameters passed to it.\
 
-<h4> 2.Quick sort </h4>
+<h4 style="font-size:18px"> 2.Quick sort </h4>
   - In order to implement merge sort, it's useful to first implement a function responsible for merging sort.
   - Given two arrays which are sorted, this helper function should create a new array, which is also sorted, and consists of all of the elements in the two input arrays.
   - This function should run in **O(n + m)** time and **O(n + m)** space and 
@@ -93,7 +96,7 @@ Invoke the **same** function with a different input ultil reaching to base case.
   - Ideally, the pivot should be chosen so that it's roughly the median value in data set you are setting.
   - For simplicity, we'll always choose the pivot to be the first element.
 
-<h4> 3.Radix sort </h4>
+<h4 style="font-size:18px"> 3.Radix sort </h4>
 <ul>
   <li>Radix sort is a special sorting algorithm that works on lists of numbers</li>
   <li>It nerver makes comparisions between elements</li>
@@ -101,7 +104,7 @@ Invoke the **same** function with a different input ultil reaching to base case.
   <li>More digits means the bigger number!</li>
 </ul>
 
-<h4> Big O of Merge Sort </h4>
+<h4 style="font-size:18px"> Big O of Merge Sort </h4>
 
   <table style="text-align:center">
     <thead>
@@ -143,15 +146,14 @@ Invoke the **same** function with a different input ultil reaching to base case.
   <p><strong>Define: </strong>Data stuctures are collections of values, the relationship among them, and the functions or operations that can be applied to the data</p>
   <p>Different data structures excel at defferent things. Some are hightly specialized, while others (like arrays) are more generally used.</p>
 </div>
-<h3>Contents</h3>
-<h4> 1. Class Syntax  </h4>
-<h4> 2. Singly Linked Lists </h4>
+<h2 style="font-size:22px">Contents</h2>
+<h4 style="font-size:18px"> 1. Class Syntax  </h4>
+<h4 style="font-size:18px"> 2. Singly Linked Lists </h4>
   
 <div>
   <p><strong>Linked lists</strong> is a data structure that contains a <strong>head, tail</strong> and <strong>length</strong> property.</p>
   <p>Linked lists consists of nodes, and each <strong>node</strong> has a <strong>value</strong> and a <strong>pointer</strong> to another node or null.</p>
 </div>
-
 <div>
   <h4>Comparisons with Arrays</h4>
   <table>
@@ -180,17 +182,17 @@ Invoke the **same** function with a different input ultil reaching to base case.
       </tr>    
     </tbody>
   </table>  
-  
 </div>
-
-<h3><strong>Big O Notation</strong></h3>
+<h3>
+  <strong>Big O Notation</strong>
+</h3>
 
 | type | time of complexity |
 | ---  | --- |
 | Insertion | O(1) | 
 | Removal |  It depends ... O(1) or O(n)|
 | Searching | O(n) |
-|Access |  O(n)|
+| Access |  O(n)|
 
 <h3><strong>RECAP: </strong></h3>
 <ul>
@@ -199,6 +201,23 @@ Invoke the **same** function with a different input ultil reaching to base case.
   <li>The idea of list data structure that consists of nodes is the foundation for other data structures like <code>Stacks and Queues</code></li>
 </ul>
 
+<h4 style="font-size:18px">3. Doubly Linked Lists</h4>
+<h3>
+  <strong>Big O Notation</strong>
+</h3>
+
+| type | time of complexity |
+| ---  | --- |
+| Insertion | O(1) | 
+| Removal |  O(1) |
+| Searching | O(n) [actually O(n/2)] |
+| Access |  O(n)|
 
 
+<h3><strong>RECAP: </strong></h3>
+<ul>
+  <li>Doybly Linked Lists are almost identical to Singly linked lists except there is an additional pointer previous nodes.</li>
+  <li>Better than Singly Linked List for finding nodes and can be done in half the time!</li>
+  <li>However, they do take up more memory considering the extra pointer.</li>
+</ul>
 

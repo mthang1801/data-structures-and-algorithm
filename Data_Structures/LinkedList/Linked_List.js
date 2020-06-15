@@ -1,13 +1,13 @@
 //LINKED LIST
 
-class Node {
+const Node = class Node {
   constructor(val) {
     this.val = val;
     this.next = null;
   }
-}
+};
 
-class LinkedList {
+const LinkedList = class LinkedList {
   constructor() {
     this.head = null;
     this.tail = null;
@@ -170,7 +170,9 @@ class LinkedList {
     }
     return this;
   }
-}
+};
+
+module.exports = { Node, LinkedList };
 
 /*
 //========================================================\\

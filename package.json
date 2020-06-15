@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start" : "nodemon Data_Structures/Double_LinkedList/Double_LinkedList.js"
+    "start" : "nodemon Data_Structures/StackAndQueue/Queue.js"
   },
   "repository": {
     "type": "git",

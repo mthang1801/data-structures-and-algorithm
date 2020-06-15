@@ -87,11 +87,10 @@ Invoke the **same** function with a different input ultil reaching to base case.
 <h4 style="font-size:18px"> 2.Quick sort </h4>
   - In order to implement merge sort, it's useful to first implement a function responsible for merging sort.
   - Given two arrays which are sorted, this helper function should create a new array, which is also sorted, and consists of all of the elements in the two input arrays.
-  - This function should run in **O(n + m)** time and **O(n + m)** space and 
+  - This function should run in <strong>O(n + m)</strong> time and <strong>O(n + m)</strong> space and 
   - The order of element on either side of the pivot doesn't matter!
-  - The helper should do this **in place**, that is, it should not create a new array
+  - The helper should do this <strong>in place</strong>, that is, it should not create a new array
   - When complete, helper should return the index of the pivot.
-  **Picking a pivot**
   - The runtime of quick sort depends on parts on how one selects the pivot
   - Ideally, the pivot should be chosen so that it's roughly the median value in data set you are setting.
   - For simplicity, we'll always choose the pivot to be the first element.
@@ -147,8 +146,8 @@ Invoke the **same** function with a different input ultil reaching to base case.
   <p>Different data structures excel at defferent things. Some are hightly specialized, while others (like arrays) are more generally used.</p>
 </div>
 <h2 style="font-size:22px">Contents</h2>
-<h4 style="font-size:18px"> 1. Class Syntax  </h4>
-<h4 style="font-size:18px"> 2. Singly Linked Lists </h4>
+<h3 style="font-size:18px"> 1. Class Syntax  </h3>
+<h3 style="font-size:18px"> 2. Singly Linked Lists </h3>
   
 <div>
   <p><strong>Linked lists</strong> is a data structure that contains a <strong>head, tail</strong> and <strong>length</strong> property.</p>
@@ -183,9 +182,9 @@ Invoke the **same** function with a different input ultil reaching to base case.
     </tbody>
   </table>  
 </div>
-<h3>
+<h4>
   <strong>Big O Notation</strong>
-</h3>
+</h4>
 
 | type | time of complexity |
 | ---  | --- |
@@ -194,17 +193,20 @@ Invoke the **same** function with a different input ultil reaching to base case.
 | Searching | O(n) |
 | Access |  O(n)|
 
-<h3><strong>RECAP: </strong></h3>
+<h4><strong>RECAP: </strong></h4>
 <ul>
   <li>Singly linked lists are excellent alternatives arrays when insertion and deletion at the beginning are frequently required</li>
   <li>Array contains a build in index, whereas Linked lists do not index.</li>
   <li>The idea of list data structure that consists of nodes is the foundation for other data structures like <code>Stacks and Queues</code></li>
 </ul>
 
-<h4 style="font-size:18px">3. Doubly Linked Lists</h4>
-<h3>
+<h3 style="font-size:18px">3. Doubly Linked Lists</h3>
+<div>
+  <strong>Doubly Linked Lists</strong> are the same as singly Linked Lists, except they have more previous pointer. Therefore, they take advantage of searching, remove the last item compare with singly linked lists, but they have to use memory more than singly linked lists.
+</div>
+<h4>
   <strong>Big O Notation</strong>
-</h3>
+</h4>
 
 | type | time of complexity |
 | ---  | --- |
@@ -214,10 +216,49 @@ Invoke the **same** function with a different input ultil reaching to base case.
 | Access |  O(n)|
 
 
-<h3><strong>RECAP: </strong></h3>
+<h4><strong>RECAP: </strong></h4>
 <ul>
-  <li>Doybly Linked Lists are almost identical to Singly linked lists except there is an additional pointer previous nodes.</li>
+  <li>Doubly Linked Lists are almost identical to Singly linked lists except there is an additional pointer previous nodes.</li>
   <li>Better than Singly Linked List for finding nodes and can be done in half the time!</li>
   <li>However, they do take up more memory considering the extra pointer.</li>
 </ul>
 
+<h3>Stack And Queue</h3>
+
+![Stack-and-Queue](https://miro.medium.com/max/680/1*gElPyOaYbFQPIDm5ucI8MQ.png)
+
+<h3>1. Stack</h3>
+<div>
+  <strong>Stack</strong> is a <strong>LIFO</strong> data structure which is the last element added to the stack will be the first element removed from the stack.  
+</div>
+<ul>
+  <li>Managing function invocations.</li>
+  <li>Undo/ Redo</li>
+  <li>Routing (the history object) is treated like a stack!</li>
+</ul>
+<h4>
+  <strong>Big O Notation</strong>
+</h4>
+
+| type | time of complexity |
+| ---  | --- |
+| Insertion | O(1) | 
+| Removal |  O(1) |
+| Searching | O(n)|
+| Access |  O(n)|
+
+<h3>2. Queue</h3>
+<div>
+  <strong>Queue</strong> is a <strong>FIFO</strong> data structure which is the last element added to the queue will be the last element removed from the queue.
+</div>
+
+<h4>
+  <strong>Big O Notation</strong>
+</h4>
+
+| type | time of complexity |
+| ---  | --- |
+| Insertion | O(1) | 
+| Removal |  O(1) |
+| Searching | O(n)|
+| Access |  O(n)|

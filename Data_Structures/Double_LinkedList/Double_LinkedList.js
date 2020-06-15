@@ -152,6 +152,21 @@ class DoubleLinkedList {
     this.length--;
     return currentNode;
   }
+
+  reverse() {
+    let currentNode = this.head;
+    let temp;
+    while (currentNode) {
+      temp = currentNode.next;
+      currentNode.next = currentNode.prev;
+      currentNode.prev = temp;
+      currentNode = currentNode.prev;
+    }
+    temp = this.head;
+    this.head = this.tail;
+    this.tail = temp;
+    return this;
+  }
 }
 
 /*
@@ -213,3 +228,6 @@ console.log(list.get(1));
 console.log(list.remove(1));
 console.log(list.get(1));
 */
+
+//reverse()
+console.log(list.reverse());

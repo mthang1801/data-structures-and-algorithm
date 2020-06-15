@@ -20,8 +20,9 @@ class Stack {
     if (!this.first) {
       this.first = this.last = newNode;
     } else {
-      this.first.next = newNode;
+      let temp = this.first;
       this.first = newNode;
+      this.first.next = temp;
     }
     this.size++;
     return this;

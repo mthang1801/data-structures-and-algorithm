@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start" : "nodemon Data_Structures/StackAndQueue/Queue.js"
+    "start" : "nodemon Data_Structures/BinarySearchTree/BinarySearchTree.js"
   },
   "repository": {
     "type": "git",

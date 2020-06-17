@@ -20,6 +20,7 @@
 
 ![Recursion](https://miro.medium.com/max/1200/1*gSHrSNZK0bx-X7m1RraA6A.jpeg)
 <h4> Objectives </h4>
+
 - Define what recursion is and how it can be used.
 - Understand the two essential components of a recursive function.
 - Visualize the call stack to better debug and understand recursive functions.
@@ -41,7 +42,9 @@
 Invoke the **same** function with a different input ultil reaching to base case.
 
 <h3> Chapter 3 : Searching Algorithms</h3>
+
 - How do we search? Given an array, the simplest way to search for an value is to look at every element in the array and check if it's the value we want. (called linear search)
+
 - **JS has search!**
   - There are many different search methods on arrays in javascript: 
     * indexOf
@@ -51,9 +54,9 @@ Invoke the **same** function with a different input ultil reaching to base case.
 
 ![Searching-Algorithms](https://miro.medium.com/max/981/1*sav5YXtt9R_3jmw7TBcSMg.png)
 
-
 <h3> Chapter 4 : Sorting Algorithms Fundamental</h3>
 - Sorting is the process of rearanging the items in a collection(e.g array) so that the item are in some kind of order.
+
   + Example : 
     * Sorting numbers from smallest to largest
     * Sorting names alphabetically
@@ -87,6 +90,7 @@ Invoke the **same** function with a different input ultil reaching to base case.
   - This function should run in **O(n + m)** time and **O(n + m)** space and **should not** modify the parameters passed to it.\
 
 <h4> 2.Quick sort </h4>
+
   - In order to implement merge sort, it's useful to first implement a function responsible for merging sort.
   - Given two arrays which are sorted, this helper function should create a new array, which is also sorted, and consists of all of the elements in the two input arrays.
   - This function should run in <strong>O(n + m)</strong> time and <strong>O(n + m)</strong> space and 
@@ -304,4 +308,18 @@ Invoke the **same** function with a different input ultil reaching to base case.
 | ---  | --- |
 | Insertion | O(log n) | 
 | Searching | O(log n)|
+
+<h4><strong>Tree Traversal</strong></h4>
+
+- **Two ways** : 
+  + Breadth-first Search
+  + Depth-first Search
+
+<h4><strong>RECAP</strong></h4>
+
++ Trees are non-linear data structures that contain a root and child nodes
++ Binary Trees can have values of any type, but at most two children for each parent
++ Binary Search Trees are a more specific version of binary trees where every node to the left of a parent is less than it's value and every node to the right is greater
++ We can search through Trees using BFS and DFS
+
 
